@@ -45,3 +45,19 @@ def app(project_id, model_name, chunk_size, chunk_overlap, persist_directory):
                     )
                     st.session_state["qa"] = qa
 
+    if uploaded_file is None:
+        with st.chat_message("assistant"):
+            st.write("Please upload your CV")
+    else:
+        prompt = st.chat_input("Ask something")
+        if prompt:
+            # Answer
+            answer = st.session_state["qa"]({"question": prompt})
+            # Load History messages (this includes the answer)
+            for message in answer["chat_history"]:
+                if isinstance(message, HumanMessage):
+                    with st.chat_message("user", avatar=user_avatar):
+                        st.write(message.content)
+                elif isinstance(message, AIMessage):
+                    with st.chat_message("assistant", avatar="🤖"):
+                        st.write(message.content)
