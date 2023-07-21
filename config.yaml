@@ -1,0 +1,10 @@
+# Text Splitter
+chunk_size : 1000
+chunk_overlap : 100
+
+# Vector Store
+persist_directory : 'docs/chroma'
+
+# Vertex AI
+project_id : 'gcp-project'
+model_name : 'chat-bison'
