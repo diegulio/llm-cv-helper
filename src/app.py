@@ -24,3 +24,6 @@ def app(project_id, model_name, chunk_size, chunk_overlap, persist_directory):
 
                     # Split documents
                     chunks = split_documents(docs, chunk_size, chunk_overlap)
+
+                    # Store chunks as embeddings
+                    vectordb = store_vectors(chunks, project_id, persist_directory)
