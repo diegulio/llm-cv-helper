@@ -21,3 +21,6 @@ def app(project_id, model_name, chunk_size, chunk_overlap, persist_directory):
                 with st.spinner("Loading document..."):
                     # Get the documents
                     docs = get_documents(uploaded_file)
+
+                    # Split documents
+                    chunks = split_documents(docs, chunk_size, chunk_overlap)
