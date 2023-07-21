@@ -27,3 +27,7 @@ def app(project_id, model_name, chunk_size, chunk_overlap, persist_directory):
 
                     # Store chunks as embeddings
                     vectordb = store_vectors(chunks, project_id, persist_directory)
+
+                    # Create Memory
+                    memory = ConversationBufferMemory(
+                        memory_key="chat_history", return_messages=True
