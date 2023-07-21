@@ -31,3 +31,17 @@ def app(project_id, model_name, chunk_size, chunk_overlap, persist_directory):
                     # Create Memory
                     memory = ConversationBufferMemory(
                         memory_key="chat_history", return_messages=True
+                    )
+
+                    # st.session_state['memory'] = memory
+
+                    # LLM
+                    llm = VertexAI(model=model_name, project_id=project_id)
+                    # Retriever
+                    retriever = vectordb.as_retriever()
+                    # Conversational Chain
+                    qa = ConversationalRetrievalChain.from_llm(
+                        llm, retriever=retriever, memory=memory
+                    )
+                    st.session_state["qa"] = qa
+
