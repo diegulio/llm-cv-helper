@@ -1,14 +1,14 @@
 # 🤖 CV Reviewer
 
-![cv-assistant.png](LLM%20-%20CV%20Reviewer%20aa40fd79ca9f46378ba47a9213315c00/cv-assistant.png)
+![cv-assistant.png](statics/cv-assistant.png)
 
 # Description
 
-In this project I build an streamlit app which allow you to chat with your resume. You can ask it several questions related a pdf document (your resume). You are able to see how I build it in my blog
+In this project I built an streamlit app which allow you to chat with your resume. You can ask it several questions related to a pdf document (your resume). You will be able to see how I built it in my blog
 
 # Demo
 
-![cv-assitant-demo.gif](LLM%20-%20CV%20Reviewer%20aa40fd79ca9f46378ba47a9213315c00/cv-assitant-demo.gif)
+![cv-assitant-demo.gif](statics/cv-assitant-demo.gif)
 
 # Installation and Use
 
