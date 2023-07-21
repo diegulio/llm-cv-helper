@@ -6,6 +6,7 @@ from langchain.schema import AIMessage, HumanMessage
 
 from src.utils import get_documents, split_documents, store_vectors
 
+
 ### APP ###
 def app(project_id, model_name, chunk_size, chunk_overlap, persist_directory):
     st.title("📩 CV Reviewer")
