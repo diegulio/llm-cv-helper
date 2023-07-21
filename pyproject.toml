@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "llm-cv-helper"
+version = "0.1.0"
+description = "llm-powered app which helps you reviewing resumes"
+authors = ["diegulio <diego.machado@usach.cl>"]
+readme = "README.md"
+packages = [{include = "llm_cv_helper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.24.1"
+openai = "^0.27.8"
+python-dotenv = "^1.0.0"
+google-cloud-aiplatform = "^1.28.0"
+google-api-python-client = "^2.93.0"
+chromadb = "^0.3.29"
+langchain = "^0.0.231"
+pypdf = "^3.12.1"
+typer = "^0.9.0"
+isort = "^5.12.0"
+black = "^23.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
