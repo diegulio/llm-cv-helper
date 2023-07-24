@@ -4,7 +4,7 @@
 
 # Description
 
-In this project I built an streamlit app which allow you to chat with your resume. You can ask it several questions related to a pdf document (your resume). You will be able to see how I built it in my blog
+In this project I built an streamlit app which allow you to chat with your resume. You can ask it several questions related to a pdf document (your resume). You will be able to see how I built it in my blog: [here](https://diegulio.github.io/posts/llm-cv-assistant/main.html) 
 
 # Demo
 
